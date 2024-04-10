@@ -11,6 +11,7 @@ public class DictionaryFrame extends JFrame {
     private final JTextField wordField;
     private final JTextArea defArea;
     private final EnglishDictionary engDic;
+
     public DictionaryFrame() throws CsvValidationException, IOException {
         engDic = new EnglishDictionary();
         setSize(800, 600);
@@ -42,7 +43,7 @@ public class DictionaryFrame extends JFrame {
             String word = wordField.getText();
             List<String> defs = engDic.getDefinition(word);
             defArea.setText("");
-            for(String def: defs) {
+            for (String def : defs) {
                 defArea.append(def + "\n");
             }
         });

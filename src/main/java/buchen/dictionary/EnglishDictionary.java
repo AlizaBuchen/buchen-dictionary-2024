@@ -13,6 +13,7 @@ import java.util.*;
  */
 public class EnglishDictionary {
     public ArrayList<String[]> words = new ArrayList<>();
+
     public EnglishDictionary() throws CsvValidationException, IOException {
         // gets the file from the "resources" directory
         InputStream in = EnglishDictionary.class.getResourceAsStream(

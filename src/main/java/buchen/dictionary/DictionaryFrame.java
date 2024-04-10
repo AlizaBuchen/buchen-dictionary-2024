@@ -44,7 +44,8 @@ public class DictionaryFrame extends JFrame {
             List<String> defs = engDic.getDefinition(word);
             defArea.setText("");
             for (String def : defs) {
-                defArea.append(def + "\n");
+                defArea.append(def);
+                defArea.append("\n");
             }
         });
     }

@@ -20,8 +20,8 @@ public class EnglishDictionaryTest {
 
         //then
         List<String> expected = Arrays.asList("One and one; twice one.",
-                "The sum of one and one; the number next greater than one, " +
-                        "and next less than three; two units or objects.",
+                "The sum of one and one; the number next greater than one, "
+                        + "and next less than three; two units or objects.",
                 "A symbol representing two units, as 2, II., or ii.");
 
         assertEquals(expected, definitions);

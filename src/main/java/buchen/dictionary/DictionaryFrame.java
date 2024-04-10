@@ -31,10 +31,10 @@ public class DictionaryFrame extends JFrame {
         defArea.setEditable(false);
         defArea.setLineWrap(true);
         defArea.setWrapStyleWord(true);
-
+        JScrollPane scrollPane = new JScrollPane(defArea);
 
         add(wordField, BorderLayout.NORTH);
-        add(defArea);
+        add(scrollPane, BorderLayout.CENTER);
 
     }
 

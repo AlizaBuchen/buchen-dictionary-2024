@@ -39,7 +39,7 @@ public class EnglishDictionary {
 
         for (String[] record : words) {
             if (record[0].equalsIgnoreCase(word)) {
-                def.add(Arrays.toString(record[2].split(";")));
+                def.add(record[2]);
             }
         }
         return def;
